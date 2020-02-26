@@ -9,7 +9,7 @@ class PbplayersApplicationTests {
 
 	@Test
 	fun contextLoads() {
-		Assertions.assertTrue(true);
+		Assertions.assertTrue(false);
 	}
 
 
