@@ -1,4 +1,4 @@
-package de.spoloczek.pbplayers.domain
+package de.spoloczek.pbplayers.domain.entity
 
 class Player
 {

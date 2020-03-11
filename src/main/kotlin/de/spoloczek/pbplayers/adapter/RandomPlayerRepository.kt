@@ -1,6 +1,6 @@
 package de.spoloczek.pbplayers.adapter
 
-import de.spoloczek.pbplayers.domain.Player
+import de.spoloczek.pbplayers.domain.entity.Player
 import de.spoloczek.pbplayers.repository.PlayerRepository
 import org.springframework.stereotype.Repository
 

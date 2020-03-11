@@ -1,4 +1,4 @@
-package de.spoloczek.pbplayers.domain
+package de.spoloczek.pbplayers.domain.entity
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertTrue
@@ -21,8 +21,9 @@ internal class PlayerTest
     @Test
     fun `init player`()
     {
-        val player = Player("Max", "Mustermann")
+        val player = Player(1, "Max", "Mustermann")
 
+        assertEquals(1, player.id)
         assertEquals("Max", player.firstName)
         assertEquals("Mustermann", player.lastName)
     }
@@ -30,7 +31,7 @@ internal class PlayerTest
     @Test
     fun `add to a team`()
     {
-        val player = Player("firstName", "lastName")
+        val player = Player(1, "firstName", "lastName")
         val team = Team("abc")
 
         player.addToTeam(team)

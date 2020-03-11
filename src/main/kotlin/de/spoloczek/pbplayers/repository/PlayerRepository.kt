@@ -1,6 +1,6 @@
 package de.spoloczek.pbplayers.repository
 
-import de.spoloczek.pbplayers.domain.Player
+import de.spoloczek.pbplayers.domain.entity.Player
 
 interface PlayerRepository
 {

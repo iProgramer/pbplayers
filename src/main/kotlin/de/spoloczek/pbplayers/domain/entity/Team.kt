@@ -1,4 +1,6 @@
-package de.spoloczek.pbplayers.domain
+package de.spoloczek.pbplayers.domain.entity
+
+import de.spoloczek.pbplayers.domain.entity.Player
 
 class Team
 {

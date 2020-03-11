@@ -1,6 +1,6 @@
-package de.spoloczek.pbplayers.service
+package de.spoloczek.pbplayers.domain.service
 
-import de.spoloczek.pbplayers.domain.Player
+import de.spoloczek.pbplayers.domain.entity.Player
 import de.spoloczek.pbplayers.repository.PlayerRepository
 
 class PlayerService

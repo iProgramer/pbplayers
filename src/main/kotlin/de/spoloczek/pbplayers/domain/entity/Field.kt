@@ -1,6 +1,6 @@
-package de.spoloczek.pbplayers.domain
+package de.spoloczek.pbplayers.domain.entity
 
-class Event
+class Field
 {
     var name: String; private set
 
