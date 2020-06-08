@@ -1,4 +1,4 @@
-package de.spoloczek.pbplayers.repository
+package de.spoloczek.pbplayers.domain.repository
 
 import de.spoloczek.pbplayers.domain.entity.Player
 

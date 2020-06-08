@@ -1,6 +1,5 @@
 package de.spoloczek.pbplayers.domain.entity
 
-import de.spoloczek.pbplayers.domain.entity.Event
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -14,6 +13,15 @@ class EventTest
         val event = Event("Random Event")
 
         Assertions.assertEquals("Random Event", event.name)
+    }
+
+    fun `add player to event`()
+    {
+        val event = Event("Random Event")
+        val player = Player(1, "Max", "Mustermann")
+
+        val participation = event.addPlayer(player)
+
     }
 
 }

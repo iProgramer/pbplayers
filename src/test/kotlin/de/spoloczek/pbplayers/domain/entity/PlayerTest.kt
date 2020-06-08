@@ -39,5 +39,4 @@ internal class PlayerTest
         assertEquals(team, player.team)
         assertTrue(team.members.contains(player))
     }
-
 }

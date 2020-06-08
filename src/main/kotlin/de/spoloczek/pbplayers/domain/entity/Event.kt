@@ -9,4 +9,9 @@ class Event
         this.name = name;
     }
 
+    fun addPlayer(player: Player): Participation
+    {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
 }

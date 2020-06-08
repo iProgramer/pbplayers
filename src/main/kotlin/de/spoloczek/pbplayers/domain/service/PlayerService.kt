@@ -1,11 +1,11 @@
 package de.spoloczek.pbplayers.domain.service
 
 import de.spoloczek.pbplayers.domain.entity.Player
-import de.spoloczek.pbplayers.repository.PlayerRepository
+import de.spoloczek.pbplayers.domain.repository.PlayerRepository
 
 class PlayerService
 {
-    val playerRepository: PlayerRepository
+    private val playerRepository: PlayerRepository
 
     constructor(playerRepository: PlayerRepository)
     {

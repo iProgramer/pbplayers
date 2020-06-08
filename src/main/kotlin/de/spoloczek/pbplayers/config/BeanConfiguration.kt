@@ -1,6 +1,6 @@
 package de.spoloczek.pbplayers.config
 
-import de.spoloczek.pbplayers.repository.PlayerRepository
+import de.spoloczek.pbplayers.domain.repository.PlayerRepository
 import de.spoloczek.pbplayers.domain.service.PlayerService
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
