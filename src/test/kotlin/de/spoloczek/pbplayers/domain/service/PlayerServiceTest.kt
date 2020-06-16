@@ -25,7 +25,7 @@ internal class PlayerServiceTest
 
         playerService.listAllPlayers()
 
-        Mockito.verify(playerRepository, times(1)).getAllPlayers()
+        Mockito.verify(playerRepository, times(2)).getAllPlayers()
     }
 
     @Test
