@@ -1,6 +1,7 @@
 package de.spoloczek.pbplayers.domain.entity
 
-import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Assertions.assertEquals
+
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
 
@@ -8,19 +9,26 @@ import org.junit.jupiter.api.TestInstance
 class EventTest
 {
     @Test
-    fun `init field`()
+    fun `init event`()
     {
-        val event = Event("Random Event")
+        var field = Field("Karlsruhe Paintball Ranch")
+        val event = Event("Random Event", field)
 
-        Assertions.assertEquals("Random Event", event.name)
+        assertEquals("Random Event", event.name)
+        assertEquals(field, event.field)
     }
 
+    @Test
     fun `add player to event`()
     {
-        val event = Event("Random Event")
+        var field = Field("Karlsruhe Paintball Ranch")
+        val event = Event("Random Event", field)
         val player = Player(1, "Max", "Mustermann")
 
-        val participation = event.addPlayer(player)
+        event.addPlayer(player)
+
+        assertEquals(1, event.getParticipants().size)
+
 
     }
 

@@ -1,17 +1,22 @@
 package de.spoloczek.pbplayers.domain.entity
 
+import org.hibernate.validator.internal.util.stereotypes.Immutable
+
 class Event
 {
-    var name: String; private set
+    val name: String
+    val field: Field
 
-    constructor(name: String)
+    private val participants: MutableSet<Player> = hashSetOf()
+
+    constructor(name: String, field: Field)
     {
         this.name = name;
+        this.field = field;
     }
 
-    fun addPlayer(player: Player): Participation
-    {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+    fun addPlayer(player: Player) = participants.add(player)
+
+    fun getParticipants() = setOf(participants)
 
 }
